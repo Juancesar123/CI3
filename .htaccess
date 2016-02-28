@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond $1 !^(bootstrap|dist|plugins|images_dir|pengajuan_dir|surat_pengajuan_dir|surat_persetujuan_dir|laporan_kegiatan_dir|laporan_keuangan_dir)
+RewriteRule ^(.*)$ index.php [L]
+RewriteCond $1 !^(index.php|bootstrap|dist|plugins|images_dir|pengajuan_dir|surat_pengajuan_dir|surat_persetujuan_dir|laporan_kegiatan_dir|laporan_keuangan_dir)
+RewriteRule ^(.*)$ index.php/$1 [L]
